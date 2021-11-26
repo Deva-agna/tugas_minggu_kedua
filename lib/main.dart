@@ -59,9 +59,7 @@ class MyApp extends StatelessWidget {
                     Container(
                       height: 105,
                       width: 105,
-                      decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          gradient: LinearGradient(colors: [Merah, Orange])),
+                      decoration: BoxDecoration(shape: BoxShape.circle, gradient: LinearGradient(colors: [Merah, Orange])),
                     ),
                     const CircleAvatar(
                       radius: 50,
@@ -69,8 +67,7 @@ class MyApp extends StatelessWidget {
                     ),
                     const CircleAvatar(
                       radius: 47,
-                      backgroundImage:
-                          NetworkImage("https://picsum.photos/id/237/200/300"),
+                      backgroundImage: NetworkImage("https://picsum.photos/id/237/200/300"),
                     ),
                   ],
                 ),
@@ -120,32 +117,35 @@ class MyApp extends StatelessWidget {
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
             RichText(
-                text: const TextSpan(
-                    text:
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    style: TextStyle(color: Colors.black, fontSize: 12),
-                    children: <TextSpan>[
+              text: const TextSpan(
+                text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                style: TextStyle(color: Colors.black, fontSize: 12),
+                children: <TextSpan>[
                   TextSpan(
-                      text: "#hashtag",
-                      style: TextStyle(
-                        color: Colors.blue,
-                      )),
+                    text: "#hashtag",
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
                   TextSpan(
-                      text: "\nLink goes here",
-                      style: TextStyle(
-                        color: Colors.blue,
-                      )),
-                ])),
+                    text: "\nLink goes here",
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             const SizedBox(
               height: 5,
             ),
             OutlinedButton(
-                onPressed: () {},
-                child: const Text(
-                  "Edit Profile",
-                  style: TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.bold),
-                )),
+              onPressed: () {},
+              child: const Text(
+                "Edit Profile",
+                style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+              ),
+            ),
             const SizedBox(
               height: 5,
             ),
@@ -174,8 +174,9 @@ class MyApp extends StatelessWidget {
                 ),
               ],
             ),
+            // buat 20 ajah
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -191,8 +192,7 @@ class MyApp extends StatelessWidget {
               height: 10,
             ),
             GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3, mainAxisSpacing: 2, crossAxisSpacing: 2),
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, mainAxisSpacing: 2, crossAxisSpacing: 2),
               itemCount: 20,
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
@@ -209,6 +209,7 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
+        // well done -> ngulik bottom navigation bar
         bottomNavigationBar: BottomNavigationBar(
           showUnselectedLabels: false,
           showSelectedLabels: false,
@@ -274,12 +275,7 @@ class Story extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Grey,
-                boxShadow: [
-                  BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 1,
-                      blurRadius: 2)
-                ],
+                boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5), spreadRadius: 1, blurRadius: 2)],
               ),
             ),
             CircleAvatar(
